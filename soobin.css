@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("https://files.catbox.moe/rdz06j.crdownload"), auto;
+  }
+
+  .body {
+    scroll-behavior: smooth;
+    background-image: url("https://64.media.tumblr.com/0ecdc471e6cdba51ab4f3ab1215e8b0e/bb9f037edc57fb13-0e/s400x600/050e67c030979d38d0c66dfb36b11125facba601.gifv");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.text {
+        font-family: 'Single Day', cursive;
+        color: #756b5b;
+        font-size: 14px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #ffe3f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Single Day", cursive;
+    color: #fff;
+  }
+
+  .back-button:hover {
+    background: #ffeef7;
+  }
+
+  .photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    background-color: pink;
+    border: 5px solid #ffffff;
+    box-shadow:
+      0 0 10px #ffd8ec,
+      0 0 20px #ffd8ec,
+      0 0 30px #ffd8ec,
+      0 0 40px #ffffff;
+  }

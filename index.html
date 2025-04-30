@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle School Project Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+  // drag function
+const headers = document.querySelectorAll('.window-header');
+
+headers.forEach(header => {
+  const win = header.parentElement;
+  header.onmousedown = function(e) {
+    let shiftX = e.clientX - win.getBoundingClientRect().left;
+    let shiftY = e.clientY - win.getBoundingClientRect().top;
+
+    function moveAt(pageX, pageY) {
+      win.style.left = pageX - shiftX + 'px';
+      win.style.top = pageY - shiftY + 'px';
+    }
+
+    function onMouseMove(e) {
+      moveAt(e.pageX, e.pageY);
+    }
+
+    document.addEventListener('mousemove', onMouseMove);
+
+    header.onmouseup = function() {
+      document.removeEventListener('mousemove', onMouseMove);
+      header.onmouseup = null;
+    };
+  };
+
+  header.ondragstart = () => false;
+});
+</script>
+  <div class="floating-window">
+    <div class="window-header">🌼 windows 64</div>
+    <div class="window-content">
+      <div class="madoka">
+        <img src="https://i.pinimg.com/736x/7a/dc/b0/7adcb03638352319ceed7145bc43df14.jpg" alt="madoka" class="madoka-img" />
+        <div class="txt">
+          <p>28/04/25
+            ✧｡٩(ˊᗜˋ)و✧*｡ today i finally finished! </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div id="note" class="note">🌸</div>
+  <div id="loading-screen">
+    <img src="https://64.media.tumblr.com/9230f886ecac573668e26466e241c208/c25a8d9031882137-92/s400x600/ca1dcfc42b17f9cf2827d0896274f43cda584e4f.gifv" id="loading-gif" />
+    <p>🌸 Loading… Please use this website with a <span class="highlight">laptop or PC.</span></p>
+  </div>
+  
+    <!-- Add this to your HTML inside <body> -->
+<div class="floating-hearts"></div>
+
+    <!-- LANDING SECTION -->
+    <header>
+        <div class="nyah">
+        <nav class="nav">
+            <ul>
+                <li><a href="#"> <img class="banana" src="https://64.media.tumblr.com/f7cfbe31ac05c85ba4452825fc572652/tumblr_inline_p8049h98Xt1qid2nw_75sq.gif" width="20" height="20" alt=""> Home</a></li> <!-- Updated href to go to top of page -->
+                <li><a href="#about">(ﾉ◕ヮ◕)ﾉ About *:･ﾟ✧</a></li>
+                <li><a href="#links">Links <img class="banana" src="https://64.media.tumblr.com/4aa91675616dd1aa9bb18fa1c165c873/tumblr_inline_p8049hxTB91qid2nw_75sq.gif"></a></li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="profile">
+                    <img class="profile-pic" src="images/otherr.png" alt="">
+                </div>
+            </div>
+            <div class="name">
+                <h1> <img class="ree" src="https://64.media.tumblr.com/1fd577048f4f0b9c16f9aa49dc5104fd/29bbea924fcd162a-76/s75x75_c1/80390584e4ebc92590602caceb2573468ed52ecd.gif" width="50" height="50" alt=""> melea sueiro (＾• ω •＾)</h1>
+            </div>
+        </div>
+        <a href="soobs.html" target="_blank">
+            <button class="button">click me!! (´▽`ʃ♡ƪ)</button>
+        </a>
+    </header>
+
+    <!-- ABOUT ME SECTION -->
+        <div class="about-section">
+            <div class="headabout">
+                <img class="naa" src="https://files.catbox.moe/kyex87.png" width="1250" height="350" alt="">
+                <section id="about"></section>
+                <h2>About Me (*≧ω≦)</h2>
+            </div>
+            <div class="about-box">
+                <img class="ware" src="https://i.pinimg.com/736x/21/5c/4d/215c4daf9c99079e9c32fb01cc11ee5e.jpg" width="200" height="200" alt="">
+                <div class="bubble">
+                  <a href="secret.html" font-size: 10px;">🐾</a>
+                <p> Hii!!! My name is Melea and I'm 11 (´｡• ᵕ •｡`) my favourite genres are true crime, shoujo anime, 2000s movies and romcoms! (≧▽≦) i love my best friends Emma and Desshika ♡
+                    I also like doing digital art and CSS customizing!! (i hope my page looks good...) my favourite tv shows are ouran high school host club and saiki k!! i love love LOVE ramen! i also love chiikawa, sanrio, rillakuma and kaomojis! (๑˃ᴗ˂) 
+                    <p>fav things: <span class="highlight">pink</span>, <span class="highlight">lamp (the band)</span>, <span class="highlight">ramen</span>, <span class="highlight">stationery</span>, <span class="highlight">web surfing</span>, <span class="highlight">anime</span>, <span class="highlight">kpop</span> <img class="ree" src="https://tomomi.neocities.org/pixeles/210.gif"></p>
+                </p>
+                <div class="side-by-side">
+                <img class="run" src="https://files.catbox.moe/bow52f.gif" width="200" height="50">
+                <img class="star" src="https://files.catbox.moe/vc1t4q.gif" width="270" height="30">
+                </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!-- LINKS SECTION -->
+    <section id="links">
+        <div class="links-section">
+            <h2>My ICT Project Links (づ｡◕‿‿◕｡)づ</h2>
+            <div class="bubble">
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1fFiICw4EtVbsukwlwLJb8nhomguKRG6m/view" target="_blank">♡ Stopmotion project - Google Drive</a></li>
+                <li><a href="https://www.canva.com/design/DAGhYTWS0Bo/X-ztGM-9pJ9GYbIJjMnu1A/edit?utm_content=DAGhYTWS0Bo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">♡ Fever poster - Google Drive</a></li>
+                <li><a href="https://www.canva.com/design/DAGhAEr3Ov4/-OyN-tid9mPkH-OAywSH2g/edit?utm_content=DAGhAEr3Ov4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">♡ Play poster - Google Drive</a></li>
+                <div class="bearbear">
+                <img src="https://goooby.neocities.org/prahics/CzRUGDc.gif" width="100" height="100">
+                </div>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <div class="mascot" id="mascot">
+      <div class="sparkles" id="sparkles"></div>
+        <img src="https://files.catbox.moe/w1q7y0.png" width="300" height="400" alt="">
+        <div class="speech" id="mascotSpeech"></div>
+        <div class="hover-message" id="hoverMessage">hello!!(≧◡≦)</div>
+      </div>
+
+      <script>
+        const mascot = document.getElementById("mascot");
+        const sparklesContainer = document.getElementById("sparkles");
+        
+        let sparkleInterval; // will hold the interval ID
+        
+        // When you hover over mascot, start making sparkles
+        mascot.addEventListener("mouseover", () => {
+          sparkleInterval = setInterval(() => {
+            const sparkle = document.createElement("div");
+            sparkle.className = "sparkle";
+            sparkle.style.left = Math.random() * 100 + "%";
+            sparkle.style.top = Math.random() * 100 + "%";
+            sparklesContainer.appendChild(sparkle);
+        
+            // Remove sparkle after it animates
+            setTimeout(() => {
+              sparkle.remove();
+            }, 1000);
+          }, 150); // a sparkle every 150 milliseconds
+        });
+        
+        // When you move mouse away, stop sparkles
+        mascot.addEventListener("mouseout", () => {
+          clearInterval(sparkleInterval);
+        });
+        </script>
+        
+        
+        <script>
+          const yapMessages = [
+            "hi! I'll just be here! (⁄⁄•⁄ω⁄•⁄⁄)⁄♡",
+            "I could really go for some ramen right now... 🍜",
+            "Click the buttons, they're 100% safe!",
+            "Lost? Click ‘Home’ to go back up (＾• ω •＾)",
+            "I'm sleepy... (。-ω-)zzz",
+            "I love whale sharks! ♡",
+            "Ummm where are we? I'm lost Σ(°△°|||)",
+            "Remember to drink water!!",
+            "Welcome to Melea’s world!! ヽ(*・ω・)ﾉ",
+            "I wanna try digital art too someday… ( ´•̥̥̥ω•̥̥̥` )"
+          ];
+          
+          const speechBubble = document.getElementById("mascotSpeech");
+          
+          let index = 0; // Which message
+          let charIndex = 0; // Which letter
+          let typing; // typing timer
+          
+          function typeMessage() {
+            const message = yapMessages[index];
+            
+            if (charIndex < message.length) {
+              speechBubble.textContent += message.charAt(charIndex);
+              charIndex++;
+              typing = setTimeout(typeMessage, 50); // speed of typing (lower is faster)
+            } else {
+              // Wait 2 seconds, then go to next message
+              setTimeout(() => {
+                index = (index + 1) % yapMessages.length;
+                charIndex = 0;
+                speechBubble.textContent = "";
+                typeMessage();
+              }, 4000); // wait 2 seconds after typing full message
+            }
+          }
+          
+          // Start typing when page loads
+          typeMessage();
+          </script>
+          
+    
+<div class="music-button">
+<audio id="bg-music" src="audio/Last Train At 25 O'Clock (1).mp3" autoplay loop></audio>
+<button onclick="toggleMusic()" class="music-button">🎵 Music On/Off</button>
+</div>
+    
+    <img class="diviider" src="https://files.catbox.moe/h3pdot.png" width="1250" height="100" alt="">
+ </div>
+
+<script>
+    document.addEventListener("click", function (e) {
+  const words = ["💖", "(*≧▽≦)", "🌸","💫", "!!", "☆彡"];
+  const word = document.createElement("span");
+  word.textContent = words[Math.floor(Math.random() * words.length)];
+  word.style.position = "absolute";
+  word.style.left = e.pageX + "px";
+  word.style.top = e.pageY + "px";
+  word.style.fontSize = "20px";
+  word.style.fontFamily = "'Comic Sans MS', 'Chalkboard SE', sans-serif";
+  word.style.color = "#ff69b4"; // hot pink!!
+  word.style.pointerEvents = "none";
+  word.style.userSelect = "none";
+  word.style.zIndex = "9999";
+
+  // Animate it
+  word.animate(
+    [
+      { transform: "translateY(0)", opacity: 1 },
+      { transform: "translateY(-50px)", opacity: 0 }
+    ],
+    {
+      duration: 1000,
+      easing: "ease-out"
+    }
+  );
+
+  document.body.appendChild(word);
+
+  // Remove after animation
+  setTimeout(() => {
+    word.remove();
+  }, 1000);
+});
+
+</script>
+
+<script>
+  const music = document.getElementById("bg-music");
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+<div id="kawaiiClock" class="kawaii-clock">
+    (๑•ᴗ•๑)♡ <br>
+    <span id="clockTime">00:00:00</span>
+  </div>
+  <script>
+    // live clock
+    function updateClock() {
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString();
+      document.getElementById("clockTime").textContent = timeStr;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  
+    // make it draggable
+    const clock = document.getElementById("kawaiiClock");
+    let isDragging = false;
+    let offsetX, offsetY;
+  
+    clock.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      offsetX = e.clientX - clock.offsetLeft;
+      offsetY = e.clientY - clock.offsetTop;
+    });
+  
+    document.addEventListener("mousemove", (e) => {
+      if (isDragging) {
+        clock.style.left = `${e.clientX - offsetX}px`;
+        clock.style.top = `${e.clientY - offsetY}px`;
+      }
+    });
+  
+    document.addEventListener("mouseup", () => {
+      isDragging = false;
+    });
+  </script>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 melea sueiro ♡ ✧。ヾ(｡>﹏<｡)ﾉﾞ✧。</p>
+        </div>
+    </footer>
+    <canvas id="sparkleCanvas"></canvas>
+    <script>
+      const canvas = document.getElementById('sparkleCanvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+    
+      let sparkles = [];
+      const sparkleColors = ['#ffc0cb', '#ffffff', '#8b5e3c']; // pink, white, brown
+    
+      document.addEventListener('mousemove', (e) => {
+        for (let i = 0; i < 5; i++) {
+          sparkles.push({
+            x: e.clientX,
+            y: e.clientY,
+            size: Math.random() * 3 + 1,
+            life: 100,
+            dx: (Math.random() - 0.5) * 2,
+            dy: (Math.random() - 0.5) * 2,
+            color: sparkleColors[Math.floor(Math.random() * sparkleColors.length)]
+          });
+        }
+      });
+    
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < sparkles.length; i++) {
+          let s = sparkles[i];
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+          ctx.fillStyle = s.color;
+          ctx.fill();
+          s.x += s.dx;
+          s.y += s.dy;
+          s.life -= 2;
+          if (s.life <= 0) {
+            sparkles.splice(i, 1);
+            i--;
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+    
+      draw();
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const loadingScreen = document.getElementById("loading-screen");
+      
+        // wait 3 seconds *after* page loads to hide it (for testing)
+        setTimeout(() => {
+          loadingScreen.style.opacity = "0";
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+          }, 1000); // fade-out time
+        }, 3000); // how long the loading screen stays
+      });
+      </script>
+       <script>
+        const colors = ["#ffb6c1", "#ff69b4", "#ffc0cb", "#ffe4e1", "#ff1493"];
+        const trailCount = 10;
+        const trails = [];
+      
+        for (let i = 0; i < trailCount; i++) {
+          const dot = document.createElement("div");
+          dot.className = "trail-dot";
+          dot.style.background = colors[i % colors.length];
+          document.body.appendChild(dot);
+          trails.push({ element: dot, x: 0, y: 0 });
+          dot.innerHTML = "♡";
+dot.style.fontSize = "14px";
+dot.style.background = "transparent";
+        }
+      
+        let mouseX = 0, mouseY = 0;
+      
+        document.addEventListener("mousemove", e => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+      
+        function animateTrail() {
+          let x = mouseX;
+          let y = mouseY;
+      
+          trails.forEach((trail, index) => {
+            const nextX = trail.x + (x - trail.x) * 0.3;
+            const nextY = trail.y + (y - trail.y) * 0.3;
+            trail.x = nextX;
+            trail.y = nextY;
+            trail.element.style.left = nextX + "px";
+            trail.element.style.top = nextY + "px";
+          });
+      
+          requestAnimationFrame(animateTrail);
+        }
+      
+        animateTrail();
+      </script>
+      <script>
+     function addSticker(src) {
+      const tray = document.getElementById("sticker-tray");
+      const newSticker = document.createElement("img");
+      newSticker.src = src;
+      newSticker.className = "sticker";
+      tray.appendChild(newSticker);
+      makeDraggable(newSticker);
+    }
+  </script>
+    </body>
+    </html>
